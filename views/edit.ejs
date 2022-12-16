@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <a href="/">kembali</a>
+    <h1>Form edit</h1>
+    <% mahasiswas.forEach(function(mahasiswa){ %>
+    <form method="post" action="/mahasiswas/update/<%= mahasiswa.key%>">
+      <input type="text" name="nim" placeholder="<%=mahasiswa.value.nim%>" />
+      <input type="text" name="nama" placeholder="<%=mahasiswa.value.nama%>" />
+      <input
+        type="text"
+        name="dospem"
+        placeholder="<%=mahasiswa.value.dospem%>"
+      />
+      <input
+        type="text"
+        name="notelp"
+        placeholder="<%=mahasiswa.value.notelp%>"
+      />
+      <input
+        type="text"
+        name="email"
+        placeholder="<%=mahasiswa.value.email%>"
+      />
+      <input type="hidden" value="<%= mahasiswa.value.rev %>" name="rev" />
+      <input type="submit" name="submit" value="Update" />
+    </form>
+    <% }) %>
+  </body>
+</html>

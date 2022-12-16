@@ -7,14 +7,7 @@
     <title>Document</title>
   </head>
   <body>
-    <form method="post" action="/mahasiswas/add">
-      <input type="text" name="nim" placeholder="Tambah NIM" />
-      <input type="text" name="nama" placeholder="Tambah Nama" />
-      <input type="text" name="dospem" placeholder="Tambah Dospem" />
-      <input type="text" name="notelp" placeholder="Tambah No Telpon" />
-      <input type="text" name="email" placeholder="Tambah Email" />
-      <input type="submit" name="submit" value="Tambah" />
-    </form>
+    <h1><a href="/create">Form Tambah</a> || <a href="/edit">Form Edit</a></h1>
     <h3>List mahasiswa</h3>
     <ul>
       <% mahasiswas.forEach(function(mahasiswa){ %>
@@ -27,15 +20,6 @@
         <form method="post" action="/mahasiswas/delete/<%= mahasiswa.key%>">
           <input type="hidden" value="<%= mahasiswa.value.rev %>" name="rev" />
           <input type="submit" name="submit" value="X" />
-        </form>
-        <form method="post" action="/mahasiswas/update/<%= mahasiswa.key%>">
-          <input type="text" name="nim" placeholder="Tambah NIM" />
-          <input type="text" name="nama" placeholder="Tambah Nama" />
-          <input type="text" name="dospem" placeholder="Tambah Dospem" />
-          <input type="text" name="notelp" placeholder="Tambah No Telpon" />
-          <input type="text" name="email" placeholder="Tambah Email" />
-          <input type="hidden" value="<%= mahasiswa.value.rev %>" name="rev" />
-          <input type="submit" name="submit" value="Update" />
         </form>
       </li>
       <% }) %>

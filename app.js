@@ -37,6 +37,22 @@ app.get("/", function (req, res) {
   );
 });
 
+app.get("/create", (req, res) => {
+  res.render("create");
+});
+
+app.get("/edit", (req, res) => {
+  couch.get(dbName, viewUrl).then(
+    function (data, headers, status) {
+      console.log(data.data.rows);
+      res.render("edit", { mahasiswas: data.data.rows });
+    },
+    function (err) {
+      res.send(err);
+    }
+  );
+});
+
 app.post("/mahasiswas/add", function (req, res) {
   const nim = req.body.nim;
   const nama = req.body.nama;
