@@ -3,6 +3,17 @@ const bodyParser = require("body-parser");
 const path = require("path");
 const NodeCouchDb = require("node-couchdb");
 
+const couch = new NodeCouchDb({
+  auth: {
+    user: "nurhaliz",
+    pass: "nurhaliz24",
+  },
+});
+
+couch.listDatabases().then(function (dbs) {
+  console.log(dbs);
+});
+
 const app = express();
 
 app.set("views", path.join(__dirname, "views"));
