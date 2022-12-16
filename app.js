@@ -66,6 +66,20 @@ app.post("/mahasiswas/add", function (req, res) {
   });
 });
 
+app.post("/mahasiswas/delete/:id", function (req, res) {
+  const id = req.params.id;
+  const rev = req.body.rev;
+
+  couch.del(dbName, id, rev).then(
+    function (data, headers, status) {
+      res.redirect("/");
+    },
+    function (err) {
+      res.send(err);
+    }
+  );
+});
+
 app.listen(3014, function () {
   console.log("server started on port 3014");
 });

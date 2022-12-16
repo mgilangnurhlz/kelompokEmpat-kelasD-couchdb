@@ -24,6 +24,10 @@
         <p><span>Dospem: </span><%= mahasiswa.value.dospem %></p>
         <p><span>No Telpon: </span><%= mahasiswa.value.notelp %></p>
         <p><span>Email: </span><%= mahasiswa.value.email %></p>
+        <form method="post" action="/mahasiswas/delete/<%= mahasiswa.key%>">
+          <input type="hidden" value="<%= mahasiswa.value.rev %>" name="rev" />
+          <input type="submit" name="submit" value="X" />
+        </form>
       </li>
       <% }) %>
     </ul>
