@@ -7,6 +7,14 @@
     <title>Document</title>
   </head>
   <body>
+    <form method="post" action="/mahasiswas/add">
+      <input type="text" name="nim" placeholder="Tambah NIM" />
+      <input type="text" name="nama" placeholder="Tambah Nama" />
+      <input type="text" name="dospem" placeholder="Tambah Dospem" />
+      <input type="text" name="notelp" placeholder="Tambah No Telpon" />
+      <input type="text" name="email" placeholder="Tambah Email" />
+      <input type="submit" name="submit" value="Tambah" />
+    </form>
     <h3>List mahasiswa</h3>
     <ul>
       <% mahasiswas.forEach(function(mahasiswa){ %>

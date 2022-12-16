@@ -37,6 +37,35 @@ app.get("/", function (req, res) {
   );
 });
 
+app.post("/mahasiswas/add", function (req, res) {
+  const nim = req.body.nim;
+  const nama = req.body.nama;
+  const dospem = req.body.dospem;
+  const notelp = req.body.notelp;
+  const email = req.body.email;
+
+  couch.uniqid().then(function (ids) {
+    const id = ids[0];
+    couch
+      .insert(dbName, {
+        _id: id,
+        nim: nim,
+        nama: nama,
+        dospem: dospem,
+        notelp: notelp,
+        email: email,
+      })
+      .then(
+        function (data, headers, status) {
+          res.redirect("/");
+        },
+        function (err) {
+          res.send(err);
+        }
+      );
+  });
+});
+
 app.listen(3014, function () {
   console.log("server started on port 3014");
 });
