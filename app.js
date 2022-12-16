@@ -10,6 +10,9 @@ const couch = new NodeCouchDb({
   },
 });
 
+const dbName = "mahasiswas";
+const viewUrl = "_design/all_mahasiswas/_view/all";
+
 couch.listDatabases().then(function (dbs) {
   console.log(dbs);
 });
@@ -23,7 +26,15 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get("/", function (req, res) {
-  res.send("jalan");
+  couch.get(dbName, viewUrl).then(
+    function (data, headers, status) {
+      console.log(data.data.rows);
+      res.render("index", { mahasiswas: data.data.rows });
+    },
+    function (err) {
+      res.send(err);
+    }
+  );
 });
 
 app.listen(3014, function () {

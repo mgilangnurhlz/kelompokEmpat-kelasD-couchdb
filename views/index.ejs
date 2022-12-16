@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h3>List mahasiswa</h3>
+    <ul>
+      <% mahasiswas.forEach(function(mahasiswa){ %>
+      <li>
+        <p><span>Nama: </span><b><%= mahasiswa.value.nama %></b></p>
+        <p><span>NIM: </span><%= mahasiswa.value.nim %></p>
+        <p><span>Dospem: </span><%= mahasiswa.value.dospem %></p>
+        <p><span>No Telpon: </span><%= mahasiswa.value.notelp %></p>
+        <p><span>Email: </span><%= mahasiswa.value.email %></p>
+      </li>
+      <% }) %>
+    </ul>
+  </body>
+</html>
