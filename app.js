@@ -80,6 +80,35 @@ app.post("/mahasiswas/delete/:id", function (req, res) {
   );
 });
 
+app.post("/mahasiswas/update/:id", function (req, res) {
+  const id = req.params.id;
+  const rev = req.body.rev;
+  const nim = req.body.nim;
+  const nama = req.body.nama;
+  const dospem = req.body.dospem;
+  const notelp = req.body.notelp;
+  const email = req.body.email;
+
+  couch
+    .update(dbName, {
+      _id: id,
+      _rev: rev,
+      nim: nim,
+      nama: nama,
+      dospem: dospem,
+      notelp: notelp,
+      email: email,
+    })
+    .then(
+      ({ data, headers, status }) => {
+        res.redirect("/");
+      },
+      (err) => {
+        res.send(err);
+      }
+    );
+});
+
 app.listen(3014, function () {
   console.log("server started on port 3014");
 });

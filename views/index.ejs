@@ -28,6 +28,15 @@
           <input type="hidden" value="<%= mahasiswa.value.rev %>" name="rev" />
           <input type="submit" name="submit" value="X" />
         </form>
+        <form method="post" action="/mahasiswas/update/<%= mahasiswa.key%>">
+          <input type="text" name="nim" placeholder="Tambah NIM" />
+          <input type="text" name="nama" placeholder="Tambah Nama" />
+          <input type="text" name="dospem" placeholder="Tambah Dospem" />
+          <input type="text" name="notelp" placeholder="Tambah No Telpon" />
+          <input type="text" name="email" placeholder="Tambah Email" />
+          <input type="hidden" value="<%= mahasiswa.value.rev %>" name="rev" />
+          <input type="submit" name="submit" value="Update" />
+        </form>
       </li>
       <% }) %>
     </ul>
