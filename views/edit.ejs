@@ -12,23 +12,11 @@
     <h1>Form edit</h1>
     <% mahasiswas.forEach(function(mahasiswa){ %>
     <form method="post" action="/mahasiswas/update/<%= mahasiswa.key%>">
-      <input type="text" name="nim" placeholder="<%=mahasiswa.value.nim%>" />
-      <input type="text" name="nama" placeholder="<%=mahasiswa.value.nama%>" />
-      <input
-        type="text"
-        name="dospem"
-        placeholder="<%=mahasiswa.value.dospem%>"
-      />
-      <input
-        type="text"
-        name="notelp"
-        placeholder="<%=mahasiswa.value.notelp%>"
-      />
-      <input
-        type="text"
-        name="email"
-        placeholder="<%=mahasiswa.value.email%>"
-      />
+      <input type="text" name="nim" value="<%=mahasiswa.value.nim%>" />
+      <input type="text" name="nama" value="<%=mahasiswa.value.nama%>" />
+      <input type="text" name="dospem" value="<%=mahasiswa.value.dospem%>" />
+      <input type="text" name="notelp" value="<%=mahasiswa.value.notelp%>" />
+      <input type="text" name="email" value="<%=mahasiswa.value.email%>" />
       <input type="hidden" value="<%= mahasiswa.value.rev %>" name="rev" />
       <input type="submit" name="submit" value="Update" />
     </form>
