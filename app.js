@@ -5,8 +5,8 @@ const NodeCouchDb = require("node-couchdb");
 
 const couch = new NodeCouchDb({
   auth: {
-    user: "nurhaliz", //! changeme
-    pass: "nurhaliz24", //! changeme
+    user: "admin", //! changeme
+    pass: "admin", //! changeme
   },
 });
 
