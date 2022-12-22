@@ -1,5 +1,11 @@
-# Pendataan Mahasiswa
-Untuk memenuhi tugas mata kuliah Manajemen Basis Data
+<div align="center"> 
+  <h1> Pendataan Mahasiswa</h1> 
+  <p>Untuk Memenuhi Ujian Akhir Semester Mata Kuliah Manajemen Basis Data</p> 
+  
+  [Teknik Informatika](http://if.uinsgd.ac.id/) || [UIN Sunan Gunung Djati Bandung](https://uinsgd.ac.id/) 
+  
+</div>
+
 
 ## Member of The Group
 1. Muhammad Firasy Sajidan (1207050071)
@@ -7,7 +13,12 @@ Untuk memenuhi tugas mata kuliah Manajemen Basis Data
 3. Muhammad Ibnu Firdaus(1207050075)
 
 ## Application
-Aplikasi digunakan untuk pendataan mahasiswa teknik informatika, pada aplikasi ini digunakan database CouchDB. CouchDB adalah basis data berorientasi dokumen sumber terbuka yang menggunakan peta nilai-kunci untuk menyimpan bidang dokumen.
+<p align="justify"> Program digunakan untuk pendataan mahasiswa teknik informatika, pada aplikasi ini digunakan database CouchDB. CouchDB adalah basis data berorientasi dokumen sumber terbuka yang menggunakan peta nilai-kunci untuk menyimpan bidang dokumen. Format penyimpanan data dan pengaplikasiannya adalah format JSON. CouchDB menggunakan Javascript untuk bahasa mengakses datanya, karena menggunakan JSON. CouchDB menggunakan HTTP sebagai API pendukung karena berbasis Apache. Adapun library yang digunakan dalam program ini diantaranya adalah Express ,EJS , dan node-couchdb.</p>
+
+
+### Link Youtube
+<p align align="left"> <a href="" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/youtube.svg" alt="mgilangnurhlz" height="50" width="60" /></a>  </p>
+
 
 <h3 align="left">Languages and Tools:</h3>
 <p align="left"> <a href="https://couchdb.apache.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/0d6c64dbbf311879f7d563bfc3ccf559f9ed111c/icons/couchdb/couchdb-original.svg" alt="couchdb" width="40" height="40"/> </a> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a>  <a href="https://expressjs.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg" alt="express" width="40" height="40"/> </a> <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://nodejs.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/> </a> </p>
@@ -96,11 +107,18 @@ node ./app.js
 
 ### Open Program in Browser
 http://localhost:3014/
-
 Enjoy the program :grin:
 
-## Connect With Us
-<p align="left">
+### Demo Program
+https://user-images.githubusercontent.com/100754364/209163494-1190668f-1106-442e-a852-59acb28fb728.mp4
+
+## References
+* [Express](https://expressjs.com/en/4x/api.html#express)
+* [node-couchdb](https://www.npmjs.com/package/node-couchdb)
+* [EJS](https://ejs.co/#docs)
+
+<h2 align= "center">Connect With Me</h2>
+<p align="center">
 <a href="https://twitter.com/mgilangnurhlz" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="mgilangnurhlz" height="30" width="40" /></a>
 <a href="https://www.linkedin.com/in/muhammad-gilang-nur-haliz-33bb69254/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="muhammad-gilang-nur-haliz" height="30" width="40" /></a>
 <a href="https://instagram.com/mgilangnurhlz" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="mgilangnurhlz" height="30" width="40" /></a>
