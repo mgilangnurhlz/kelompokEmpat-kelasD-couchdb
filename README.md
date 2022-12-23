@@ -13,11 +13,11 @@
 3. Muhammad Ibnu Firdaus(1207050075)
 
 ## Application
-<p align="justify"> Program digunakan untuk pendataan mahasiswa teknik informatika, pada aplikasi ini digunakan database CouchDB. CouchDB adalah basis data berorientasi dokumen sumber terbuka yang menggunakan peta nilai-kunci untuk menyimpan bidang dokumen. Format penyimpanan data dan pengaplikasiannya adalah format JSON. CouchDB menggunakan Javascript untuk bahasa mengakses datanya, karena menggunakan JSON. CouchDB menggunakan HTTP sebagai API pendukung karena berbasis Apache. Adapun library yang digunakan dalam program ini diantaranya adalah Express ,EJS , dan node-couchdb.</p>
+<p align="justify">Pada aplikasi ini digunakan database CouchDB. CouchDB adalah basis data berorientasi dokumen sumber terbuka yang menggunakan peta nilai-kunci untuk menyimpan bidang dokumen. Format penyimpanan data dan pengaplikasiannya adalah format JSON. CouchDB menggunakan Javascript untuk bahasa mengakses datanya, karena menggunakan JSON. CouchDB menggunakan HTTP sebagai API pendukung karena berbasis Apache. Adapun library yang digunakan dalam program ini diantaranya adalah Express ,EJS , dan node-couchdb.</p>
 
 
 ### Link Youtube
-<p align align="left"> <a href="" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/youtube.svg" alt="mgilangnurhlz" height="50" width="60" /></a>  </p>
+<div align align="left"> <a href="https://www.youtube.com/watch?v=Mg_rz36h8wc" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/youtube.svg" alt="mgilangnurhlz" height="50" width="60" /></a> or https://www.youtube.com/watch?v=Mg_rz36h8wc </div> 
 
 
 <h3 align="left">Languages and Tools:</h3>
@@ -114,7 +114,7 @@ https://user-images.githubusercontent.com/100754364/209163494-1190668f-1106-442e
 
 ## References
 * [Express](https://expressjs.com/en/4x/api.html#express)
-* [node-couchdb](https://www.npmjs.com/package/node-couchdb)
+* [node-couchdb](https://www.npmjs.com/package/node-couchdb?activeTab=readme)
 * [EJS](https://ejs.co/#docs)
 
 <h2 align= "center">Connect With Me</h2>
